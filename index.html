@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .bio, .blog, .photos {
+            margin-bottom: 20px;
+        }
+        .bio img, .blog-post img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+        }
+        .blog-post h3 {
+            margin-top: 0;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Blog Personal</h1>
+    </header>
+
+    <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#blog">Blog</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#Tuto">Turorial de git bash</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="biografia" class="bio">
+            <h2>Biografía</h2>
+            <!-- Espacio para la foto antes de la biografía -->
+            <img src="perfil.png" alt="Foto relacionada con la biografía">
+            <p>Hola, soy Jonathan Franco, un apasionado del mundo de la tecnologia, soy estudiante de ingenieria de software y datos. A lo largo de mi vida, he explorado diversos intereses relacionados con este maravilloso mundo de la tecnologia, lo que ha impulsado mi enteres por esta rama. Este blog es mi espacio para compartir mis pensamientos y experiencias sobre temas que me importan. ¡Espero que disfrutes leyendo!</p>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+
+            <div class="blog-post">
+                <h3>El asombroso mundo del hardware</h3>
+                <p>Esta es la introducción a mi primera entrada de blog. Aquí hablaré sobre que es el harware y su importancia.</p>
+                <p>El hardware se refiere a todas las partes físicas y tangibles de una computadora o cualquier dispositivo electrónico. Es lo que puedes tocar y ver, como los componentes internos y externos del equipo. Si hablamos de componentes fisicos que integren una computadora, el hardware se podria representar con un pequeño abaco que se compone de distintas piezas las cuales en conjunto se utilizar para desarrollar una tarea.  </p>
+                <!-- Espacio para la foto después de la explicación del tema 1 -->
+                <img src="hardware.png" alt="Foto relacionada con el tema 1">
+                <p>El hardware es crucial en cualquier sistema informático porque proporciona la base física necesaria para ejecutar el software y procesar datos de manera eficiente. Su rendimiento, capacidad de almacenamiento y conectividad determinan la velocidad y funcionalidad del sistema, lo que impacta directamente en la productividad y seguridad de las operaciones diarias. Sin un hardware adecuado, el software no podría funcionar correctamente, limitando las capacidades del sistema.</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>El software</h3>
+                <p>En esta publicación, discutiré otro tema interesante como lo es el software y su importancia.</p>
+                <p>El software es el conjunto de programas, aplicaciones y sistemas operativos que le dicen a una computadora cómo realizar tareas específicas. A diferencia del hardware, que es la parte física de un sistema, el software es intangible y se compone de código y datos que se ejecutan en el hardware. Ejemplos de software incluyen sistemas operativos como Windows o macOS, aplicaciones como Microsoft Word o Photoshop, y navegadores web como Google Chrome. El software es esencial porque permite que el hardware funcione y que los usuarios realicen una amplia variedad de actividades, desde escribir documentos hasta navegar por internet.</p>
+                <!-- Espacio para la foto después de la explicación del tema 2 -->
+                <img src="software.png" alt="Foto relacionada con el tema 2">
+                <p>El software se podria entender como el conjunto de conocimientos que posee una persona para interpretar los resultados obtenidos en un abaco. </p>
+            </div>
+
+         <div class="container">
+          <section id="Tuto" class="Tutorial de git bash">
+            <h2>Turorial de git bash</h2>
+            
+                <h3>¿Como utilizar git?</h3>
+            
+                <p>A continuación, explicaré un poco cómo utilizar Git Bash, una herramienta que nos permite interactuar con Git
+                 desde la línea de comandos. Git es una herramienta poderosa para el control de versiones que muchos programadores
+                  y desarrolladores utilizan para gestionar proyectos, desde los más pequeños hasta los más complejos. Si bien no 
+                  soy un experto en Git, en este totorial quiero compartir lo que he descubierto para que podamos aprender juntos a usar esta útil herramienta.</p>
+            </div>
+            <h3>¿Como iniciar un repositorio?</h3>
+            <p>Para iniciar un repositorio usando git bash, lo primero que debes hacer es descargar el programa git, una vez decargado puedes proceder a ejecutarlo
+                de esta forma ya puedes iniciar configurando git bash con tu nombre y correo electronico. Configurar Git Bash con tu nombre y correo electrónico es un paso 
+                importante porque Git utiliza esta información para registrar las actividades que realizas en el <b>repositorio</b> lo que te permite tener un historial de commits y colaborar con otras personas. </p>
+                <p>para configurar estos datos utiliza este comando.</p>
+                <img src="comando configuracion de correo.png" alt="Foto relacionada con la biografía">
+
+
+</body>
+</html>
