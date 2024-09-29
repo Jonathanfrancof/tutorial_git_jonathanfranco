@@ -135,9 +135,28 @@
             <p>Para iniciar un repositorio usando git bash, lo primero que debes hacer es descargar el programa git, una vez decargado puedes proceder a ejecutarlo
                 de esta forma ya puedes iniciar configurando git bash con tu nombre y correo electronico. Configurar Git Bash con tu nombre y correo electrónico es un paso 
                 importante porque Git utiliza esta información para registrar las actividades que realizas en el <b>repositorio</b> lo que te permite tener un historial de commits y colaborar con otras personas. </p>
-                <p>para configurar estos datos utiliza este comando.</p>
-                <img src="comando configuracion de correo.png" alt="Foto relacionada con la biografía">
-
+                <h3>Configurando git bash</h3>
+                <p>Para configurar estos datos utiliza este comando.</p>
+                <img src="conf email.png" alt="Foto relacionada con la biografía">
+                <h3>Creacion de nuestro repositorio</h3>
+                <p>Para crear un repositorio en git puedes usar el comando mkdir + el nombre que le quieras dar a tu repositorio como te muestro en el ejemplo, una vez hecho esto puedes abrir tu editor de codigo en mi caso uso VS Code el cual inicio en la ultima linea con el comando code .</p>
+                <img src="creacion de repositorio.png" alt="Foto relacionada con la biografía">
+                <p>Para ver nuestros archivos desde la terminal de Git, debemos iniciar Git con el comando git init, como te muestro en el ejemplo. Posteriormente, se ejecutó el comando git branch, el cual normalmente muestra todas las ramas existentes en el repositorio. Dado que no se ha creado ninguna rama nueva, por defecto solo existe la rama principal llamada master.</p>
+                <img src="chekeo de status .png" alt="Foto relacionada con la biografía">
+                <p>Como podemos observar, aparece un archivo en <b>rojo</b>. Esto significa que aún no se encuentra en el área de preparación. Por tal motivo, debemos usar el comando <b>git add *</b>, que se utiliza en Git para añadir todos los archivos que se encuentran en el directorio actual al área de preparación, con el fin de poder trabajar en ellos.</p>
+                <p>Utiliza el comando <b>git add *</b> como te muestro en el ejemplo, esto agregara el archivo en la zona de trabajo, por ultimo no olvides de usar el comando git status para chekear el estado de este el cual debe aparecer en verde.</p>
+                <img src="agregue los archivos .png" alt="Foto relacionada con la biografía">
+                <p>El comando <b>git status</b> El comando git status es una herramienta fundamental en Git que te permite obtener información sobre el estado actual del repositorio. un claro ejemplo de esto lo podemos aprecir en el ejemplo aterior, donde se actualizo el estado del archivo en cuestion.</p>
+                <h3>Estableciendo coneccion entre Git bash y Github.</h3>
+                <p>Establecer una conexión entre Git Bash y GitHub es esencial para facilitar la colaboración en proyectos de software. 
+                    Permite a los desarrolladores trabajar en equipo, sincronizando cambios y manteniendo un respaldo en la nube de su código. 
+                    Además, GitHub ofrece herramientas para gestionar versiones, revisar el historial de cambios y automatizar pruebas y despliegues.
+                    También proporciona una interfaz visual para entender mejor el código y documentar proyectos. En resumen, esta conexión maximiza la eficiencia y organización en el desarrollo de software.</p>
+                    <p>Para establecer una coneccion entre git bash y github primero debemos generar unas llaves las cuales se encargaran de realizar la correcta encriptacion de nuestra coneccion
+                        para ello usaremios el comando  ssh-keygen -t ed25519 -C +"nuestro correo electronico de github" de esta manera el programa nos arrojara una llave la cual necesitaremos darle a github como pudes observar en el ejemplo</p>
+                        <img src="comando keygen.png" alt="Foto relacionada con la biografía">
+                <p>Por ultimo usamos el comando cat ~/.ssh/ el cual lo ultilizamos para se utiliza para mostrar el contenido de archivos en el directorio oculto .ssh, que se encuentra en el directorio home del usuario. Este directorio suele contener claves SSH y configuraciones relacionadas con la autenticación en servidores remotos, de esta forma ya podremos empezar a trabajar desde github de una manera remota.</p>
+                <img src="fin.png" alt="Foto relacionada con la biografía">
 
 </body>
 </html>
